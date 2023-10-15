@@ -104,7 +104,7 @@ def test_readable_function():
 
 
 def open_browser(browser_name):
-    actual_result = rint_name_args(open_browser, browser_name = browser_name)
+    actual_result = print_name_args(open_browser, browser_name = browser_name)
     assert actual_result == "Open Browser [Chrome]"
 
 

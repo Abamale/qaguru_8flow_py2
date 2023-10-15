@@ -89,6 +89,13 @@ def test_find_suitable_user():
 # >>> open_browser(browser_name="Chrome")
 # "Open Browser [Chrome]"
 
+def print_name_args(name, **kwargs):
+    func_name = func.__name__.replace('_', ' ').title()
+    func_kwargs = ', '.join(map(str, list(kwargs.values())))
+    func_result = (f"{func_name} [{func_kwargs}]")
+    return func_result
+
+
 
 def test_readable_function():
     open_browser(browser_name="Chrome")
